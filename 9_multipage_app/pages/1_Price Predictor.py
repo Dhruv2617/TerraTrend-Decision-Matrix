@@ -5,10 +5,10 @@ import numpy as np
 
 st.set_page_config(page_title="Plotting Demo")
 
-with open("df.pkl","rb") as file:
+with open("9_multipage_app/df.pkl","rb") as file:
     df = pickle.load(file)
 
-with open("pipeline.pkl","rb") as file:
+with open("9_multipage_app/pipeline.pkl","rb") as file:
     pipeline = pickle.load(file)
 
 # st.dataframe(df)
