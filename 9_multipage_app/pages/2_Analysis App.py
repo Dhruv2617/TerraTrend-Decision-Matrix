@@ -10,8 +10,8 @@ st.set_page_config(page_title="Plotting Demo")
 
 st.title('Analytics')
 
-new_df = pd.read_csv('rough/data_viz1.csv')
-feature_text = pickle.load(open('rough/feature_text.pkl','rb'))
+new_df = pd.read_csv('data_viz1.csv')
+feature_text = pickle.load(open('feature_text.pkl','rb'))
 
 # for map visualization
 group_df = new_df.groupby('sector')[['price','price_per_sqft','built_up_area','latitude','longitude']].mean()
